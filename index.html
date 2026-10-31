@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="Ceylan Hasanoğlu | Clinical Psychologist, Ankara">Ceylan Hasanoğlu | Klinik Psikolog, Ankara</title>
+<meta name="description" content="Klinik Psikolog Ceylan Hasanoğlu. Ankara’da yüz yüze ve çevrim içi; çocuk, genç ve erişkinlerle psikodinamik psikoterapi, oyun terapisi ve psikodrama." data-en-content="Clinical Psychologist Ceylan Hasanoğlu. Psychodynamic psychotherapy, play therapy and psychodrama with children, young people and adults, face-to-face in Ankara and online.">
+<meta name="theme-color" content="#13293F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ceylan Hasanoğlu | Klinik Psikolog">
+<meta property="og:description" content="Kendinizi ve ilişkilerinizi yeniden düşünmek için bir alan.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2313293F'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23C9A25E'%3ECH%3C/text%3E%3C/svg%3E">
+
+<!-- Yazı tipleri: Playfair Display (başlıklar) ve Poppins (metin) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script>
+  /* Sayfa çizilmeden önce çalışır: animasyonları etkinleştirir ve İngilizce seçiliyse Türkçe metnin bir an görünmesini önler. */
+  (function () {
+    var d = document.documentElement;
+    d.classList.add('js');
+    try {
+      var p = new URLSearchParams(location.search).get('lang');
+      var s = p || localStorage.getItem('ch-lang');
+      if (s === 'en') d.classList.add('i18n-wait');
+    } catch (e) {}
+    setTimeout(function () {
+      d.classList.remove('i18n-wait');
+      if (!window.__siteReady) d.classList.remove('js');
+    }, 2500);
+  })();
+</script>
+
+<style>
+  /* ---------- Renkler ve temel ölçüler ---------- */
+  :root {
+    --sea-900: #0E2136;
+    --sea-800: #13293F;
+    --navy: #1E3A5A;
+    --navy-600: #2B4F75;
+    --gold: #C9A25E;
+    --gold-soft: #E5CD9C;
+    --gold-ink: #8A6A2F;
+    --mist: #F4F7F9;
+    --white: #FFFFFF;
+    --text: #34414E;
+    --muted: #5D6A77;
+    --line: #DCE3E9;
+    --ease: cubic-bezier(.22, 1, .36, 1);
+    --nav-h: 78px;
+    --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --sans: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+  body {
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  .js.i18n-wait body { visibility: hidden; }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  svg { flex-shrink: 0; }
+  h1, h2, h3 {
+    font-family: var(--serif);
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 1.22;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+
+  .skip-link {
+    position: absolute; left: 16px; top: -64px; z-index: 2000;
+    background: var(--navy); color: #fff; padding: 10px 16px;
+    border-radius: 10px; text-decoration: none; transition: top .3s var(--ease);
+  }
+  .skip-link:focus { top: 12px; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  .icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
+  .container { max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px); }
+  .section { padding: clamp(84px, 11vw, 136px) 0; scroll-margin-top: 64px; }
+
+  /* Bölüm başlığı: ortalı başlık ve altında ince altın çizgi (ilk tasarımdan korunan imza öğe) */
+  .section-head { text-align: center; max-width: 720px; margin: 0 auto clamp(48px, 6vw, 72px); }
+  .section-head h2 {
+    position: relative; display: inline-block; padding-bottom: 18px;
+    font-size: clamp(2rem, 1.45rem + 2.2vw, 2.75rem);
+  }
+  .section-head h2::after {
+    content: ''; position: absolute; left: 50%; bottom: 0;
+    width: 56px; height: 2px; background: var(--gold); transform: translateX(-50%);
+    transition: width 1.2s var(--ease) .25s;
+  }
+  .js .section-head:not(.is-visible) h2::after { width: 0; }
+  .lead { margin: 22px auto 0; max-width: 58ch; color: var(--muted); font-size: 1.05rem; }
+  .intro { max-width: 700px; margin: 0 auto clamp(56px, 7vw, 76px); }
+  .intro p { margin-bottom: 16px; }
+  .intro .intro-note {
+    display: inline-flex; align-items: center; gap: 12px; margin: 6px 0 0;
+    padding: 12px 18px; border-radius: 14px; background: var(--white); box-shadow: 0 0 0 1px var(--line);
+    color: var(--navy); font-weight: 500;
+  }
+  .intro-note .icon { width: 20px; height: 20px; color: var(--gold-ink); }
+
+  /* ---------- Kaydırma ilerleme çizgisi ---------- */
+  .progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 1001; pointer-events: none; }
+  .progress span {
+    display: block; height: 100%; transform-origin: left; transform: scaleX(0);
+    background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+  }
+
+  /* ---------- Üst menü ---------- */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    transition: background-color .5s var(--ease), box-shadow .5s var(--ease), backdrop-filter .5s var(--ease);
+  }
+  .nav-inner {
+    max-width: 1240px; margin: 0 auto; height: var(--nav-h);
+    padding: 0 clamp(16px, 4vw, 48px);
+    display: flex; align-items: center; gap: 24px;
+    transition: height .5s var(--ease);
+  }
+  .logo {
+    margin-right: auto; white-space: nowrap;
+    font-family: var(--serif); font-weight: 600; font-size: 1.4rem;
+    color: #fff; text-decoration: none; transition: color .5s var(--ease);
+  }
+  .nav-links { display: flex; align-items: center; gap: clamp(18px, 2.4vw, 34px); }
+  .nav-links a {
+    position: relative; padding: 6px 0; white-space: nowrap;
+    color: rgba(255, 255, 255, .88); font-weight: 500; font-size: .95rem; text-decoration: none;
+    transition: color .5s var(--ease);
+  }
+  .nav-links a::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left;
+    transition: transform .5s var(--ease);
+  }
+  .nav-links a:hover::after, .nav-links a[aria-current="true"]::after { transform: scaleX(1); }
+  .nav-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+  .navbar.scrolled, .navbar.menu-open {
+    background: rgba(255, 255, 255, .93);
+    -webkit-backdrop-filter: saturate(1.4) blur(14px);
+    backdrop-filter: saturate(1.4) blur(14px);
+    box-shadow: 0 1px 0 rgba(30, 58, 90, .08), 0 12px 30px -20px rgba(19, 41, 63, .35);
+  }
+  .navbar.scrolled .nav-inner { height: 66px; }
+  .navbar.scrolled .logo, .navbar.menu-open .logo { color: var(--navy); }
+  .navbar.scrolled .nav-links a { color: var(--text); }
+
+  /* ---------- Kaydırmalı dil anahtarı (TR / EN) ---------- */
+  .lang-switch {
+    position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+    width: 80px; height: 36px; padding: 3px; border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .4); background: rgba(255, 255, 255, .1);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    font: 600 .74rem/1 var(--sans); letter-spacing: .08em;
+    cursor: pointer; touch-action: pan-y; -webkit-tap-highlight-color: transparent;
+    transition: background-color .5s var(--ease), border-color .5s var(--ease);
+  }
+  .lang-switch:hover { border-color: rgba(255, 255, 255, .65); }
+  .lang-switch__thumb {
+    position: absolute; top: 3px; bottom: 3px; left: 3px; width: calc(50% - 3px);
+    border-radius: 999px; background: var(--gold);
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, .35);
+    transition: transform .55s cubic-bezier(.65, 0, .35, 1), background-color .5s var(--ease);
+  }
+  .lang-switch[aria-checked="true"] .lang-switch__thumb { transform: translateX(100%); }
+  .lang-switch__opt {
+    position: relative; z-index: 1; display: grid; place-items: center; height: 100%;
+    color: rgba(255, 255, 255, .8); user-select: none; -webkit-user-select: none;
+    transition: color .45s var(--ease);
+  }
+  .lang-switch[aria-checked="false"] [data-opt="tr"],
+  .lang-switch[aria-checked="true"] [data-opt="en"] { color: var(--sea-900); }
+
+  .navbar.scrolled .lang-switch, .navbar.menu-open .lang-switch {
+    border-color: rgba(30, 58, 90, .2); background: rgba(30, 58, 90, .05);
+  }
+  .navbar.scrolled .lang-switch:hover, .navbar.menu-open .lang-switch:hover { border-color: rgba(30, 58, 90, .4); }
+  .navbar.scrolled .lang-switch__thumb, .navbar.menu-open .lang-switch__thumb { background: var(--navy); }
+  .navbar.scrolled .lang-switch__opt, .navbar.menu-open .lang-switch__opt { color: var(--muted); }
+  .navbar.scrolled .lang-switch[aria-checked="false"] [data-opt="tr"],
+  .navbar.scrolled .lang-switch[aria-checked="true"] [data-opt="en"],
+  .navbar.menu-open .lang-switch[aria-checked="false"] [data-opt="tr"],
+  .navbar.menu-open .lang-switch[aria-checked="true"] [data-opt="en"] { color: #fff; }
+
+  /* ---------- Mobil menü ---------- */
+  .menu-toggle {
+    display: none; position: relative; width: 42px; height: 42px;
+    border-radius: 12px; border: 1px solid rgba(255, 255, 255, .35);
+    background: transparent; color: #fff; cursor: pointer;
+    transition: color .5s var(--ease), border-color .5s var(--ease);
+  }
+  .menu-toggle span {
+    position: absolute; left: 11px; right: 11px; height: 1.6px; border-radius: 2px;
+    background: currentColor; transition: transform .45s var(--ease), opacity .3s var(--ease);
+  }
+  .menu-toggle span:nth-child(1) { top: 14px; }
+  .menu-toggle span:nth-child(2) { top: 20px; }
+  .menu-toggle span:nth-child(3) { top: 26px; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .navbar.scrolled .menu-toggle, .navbar.menu-open .menu-toggle { color: var(--navy); border-color: rgba(30, 58, 90, .22); }
+
+  .mobile-menu {
+    position: absolute; top: 100%; left: 0; right: 0;
+    display: flex; flex-direction: column;
+    padding: 6px clamp(16px, 4vw, 48px) 18px;
+    background: #fff; border-top: 1px solid var(--line);
+    box-shadow: 0 26px 40px -26px rgba(19, 41, 63, .4);
+    opacity: 0; visibility: hidden; transform: translateY(-8px);
+    transition: opacity .35s var(--ease), transform .45s var(--ease), visibility 0s linear .45s;
+  }
+  .navbar.menu-open .mobile-menu { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+  .mobile-menu a {
+    padding: 14px 2px; border-bottom: 1px solid var(--line);
+    color: var(--navy); font-weight: 500; font-size: 1.05rem; text-decoration: none;
+  }
+  .mobile-menu a:last-child { border-bottom: 0; }
+  .mobile-menu a[aria-current="true"] { color: var(--gold-ink); }
+
+  /* ---------- Giriş (hero): sakin bir liman ---------- */
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    min-height: 100vh; min-height: 100svh;
+    display: grid; place-items: center; text-align: center; color: #fff;
+    padding: calc(var(--nav-h) + 36px) 20px clamp(130px, 16vw, 190px);
+    background:
+      radial-gradient(60% 50% at 88% 6%, rgba(122, 162, 204, .2), transparent 70%),
+      radial-gradient(55% 45% at 6% 94%, rgba(122, 162, 204, .14), transparent 70%),
+      linear-gradient(170deg, #112640 0%, #183554 52%, #1F4467 100%);
+  }
+  /* Feneri andıran, yavaşça "nefes alan" ışık */
+  .beacon {
+    position: absolute; left: 50%; top: 42%; z-index: -1;
+    width: min(1100px, 140vw); aspect-ratio: 1; pointer-events: none;
+    transform: translate(-50%, -50%) scale(.92);
+    background: radial-gradient(circle, rgba(225, 192, 130, .2) 0%, rgba(225, 192, 130, .07) 32%, transparent 62%);
+    animation: breathe 10s ease-in-out infinite;
+  }
+  @keyframes breathe {
+    0%, 100% { transform: translate(-50%, -50%) scale(.92); opacity: .75; }
+    45% { transform: translate(-50%, -50%) scale(1.06); opacity: 1; }
+  }
+  .hero-content { max-width: 880px; }
+  .hero-kicker {
+    font-family: var(--serif); font-style: italic; font-size: clamp(1.05rem, 1rem + .3vw, 1.2rem);
+    color: var(--gold-soft); margin-bottom: 18px;
+  }
+  .hero h1 {
+    color: #fff; font-size: clamp(1.75rem, calc(8.4vw - 2px), 3.7rem); line-height: 1.15;
+    text-shadow: 0 2px 24px rgba(5, 15, 28, .25);
+  }
+  .hero-sub {
+    max-width: 50ch; margin: 26px auto 40px;
+    font-size: clamp(1.02rem, .98rem + .25vw, 1.15rem); font-weight: 300; line-height: 1.8;
+    color: rgba(255, 255, 255, .86);
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  .hero [data-hero] { opacity: 0; animation: rise 1.2s var(--ease) forwards; animation-delay: var(--d, 0s); }
+  @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 15px 30px; border-radius: 999px; font-weight: 500; font-size: .98rem;
+    text-decoration: none; white-space: nowrap;
+    transition: transform .5s var(--ease), box-shadow .5s var(--ease), background-color .5s var(--ease), border-color .5s var(--ease);
+  }
+  .btn-gold { background: var(--gold); color: var(--sea-900); box-shadow: 0 14px 30px -14px rgba(201, 162, 94, .75); }
+  .btn-gold:hover { background: #D5B06D; transform: translateY(-3px); box-shadow: 0 20px 36px -16px rgba(201, 162, 94, .85); }
+  .btn-ghost { border: 1px solid rgba(255, 255, 255, .45); color: #fff; }
+  .btn-ghost:hover { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .7); transform: translateY(-3px); }
+
+  /* Yavaşça akan dalgalar; en alttaki katman bir sonraki bölümün rengiyle birleşir */
+  .waves { position: absolute; left: 0; right: 0; bottom: -1px; height: clamp(72px, 10vw, 132px); overflow: hidden; pointer-events: none; }
+  .wave { position: absolute; left: 0; bottom: 0; width: 200%; height: 100%; animation: drift linear infinite; }
+  .wave--1 { fill: rgba(255, 255, 255, .06); animation-duration: 28s; }
+  .wave--2 { fill: rgba(255, 255, 255, .11); animation-duration: 21s; animation-direction: reverse; }
+  .wave--3 { fill: var(--mist); animation-duration: 36s; }
+  @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- Hakkımda ---------- */
+  .about { background: var(--mist); }
+  .about-grid {
+    display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(48px, 7vw, 100px); align-items: center;
+  }
+  .portrait { position: relative; width: min(100%, 400px); margin: 0 auto; aspect-ratio: 483 / 647; }
+  .portrait img, .portrait-frame {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    border-radius: 50% 50% 24px 24px / 37.3% 37.3% 24px 24px;
+  }
+  .portrait img { z-index: 1; object-fit: cover; box-shadow: 0 30px 60px -30px rgba(19, 41, 63, .55); }
+  .portrait-frame {
+    border: 1.5px solid var(--gold); transform: translate(18px, 18px);
+    transition: transform 1.4s var(--ease) .35s, opacity 1.4s var(--ease) .35s;
+  }
+  .js .portrait:not(.is-visible) .portrait-frame { transform: none; opacity: 0; }
+  .portrait-badge {
+    position: absolute; z-index: 2; left: -28px; bottom: 46px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 18px; border-radius: 18px;
+    background: rgba(255, 255, 255, .92);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    box-shadow: 0 18px 40px -22px rgba(19, 41, 63, .5);
+  }
+  .portrait-badge strong { font-family: var(--serif); font-size: 2rem; line-height: 1; color: var(--navy); font-weight: 600; }
+  .portrait-badge span { font-size: .82rem; line-height: 1.35; color: var(--muted); max-width: 13ch; }
+
+  .about-text h2 { font-size: clamp(2rem, 1.45rem + 2.2vw, 2.75rem); }
+  .role { margin: 6px 0 26px; font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: var(--gold-ink); }
+  .about-text p:not(.role) { max-width: 60ch; margin-bottom: 18px; }
+  .creds { list-style: none; margin-top: 32px; display: grid; gap: 18px; }
+  .creds li { display: flex; gap: 16px; align-items: flex-start; }
+  .creds .ic {
+    flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+    background: var(--white); color: var(--navy); box-shadow: 0 0 0 1px var(--line);
+  }
+  .creds .ic .icon { width: 20px; height: 20px; }
+  .creds strong { display: block; color: var(--navy); font-weight: 500; line-height: 1.45; }
+  .creds small { display: block; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+
+  /* ---------- Çalışma alanları ---------- */
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
+  .card {
+    position: relative; overflow: hidden;
+    padding: 34px 28px 32px; border-radius: 22px;
+    background: var(--mist); border: 1px solid transparent;
+    transition: transform .6s var(--ease), box-shadow .6s var(--ease), background-color .6s var(--ease), border-color .6s var(--ease);
+  }
+  .card::after {
+    content: ''; position: absolute; left: 28px; right: 28px; bottom: 0; height: 2px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .7s var(--ease);
+  }
+  .card:hover { transform: translateY(-6px); background: var(--white); border-color: var(--line); box-shadow: 0 28px 50px -32px rgba(19, 41, 63, .45); }
+  .card:hover::after { transform: scaleX(1); }
+  .card-icon {
+    display: grid; place-items: center; width: 56px; height: 56px; margin-bottom: 24px;
+    border-radius: 50%; background: var(--white); color: var(--navy);
+    transition: background-color .6s var(--ease), color .6s var(--ease);
+  }
+  .card:hover .card-icon { background: var(--navy); color: #fff; }
+  .card h3 { font-size: 1.24rem; margin-bottom: 12px; }
+  .card p { font-size: .95rem; color: var(--muted); line-height: 1.7; }
+
+  .topics { margin-top: clamp(56px, 7vw, 80px); text-align: center; }
+  .topics h3 { font-size: 1.3rem; margin-bottom: 22px; }
+  .chips { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; margin: 0 auto; }
+  .chips li {
+    padding: 9px 18px; border-radius: 999px; border: 1px solid var(--line);
+    background: var(--white); color: var(--text); font-size: .92rem; line-height: 1.4;
+  }
+
+  /* ---------- Deneyim: zaman çizgisi ---------- */
+  .experience { background: var(--mist); }
+  .timeline {
+    --date-w: 128px; --gap: 28px;
+    position: relative; list-style: none; max-width: 860px; margin: 0 auto;
+  }
+  .timeline::before, .timeline::after {
+    content: ''; position: absolute; top: 10px; bottom: 10px; width: 2px; border-radius: 2px;
+    left: calc(var(--date-w) + var(--gap) - 1px);
+  }
+  .timeline::before { background: var(--line); }
+  .timeline::after { background: var(--gold); transform-origin: top; transform: scaleY(var(--tl, 0)); }
+  .tl-item {
+    position: relative; display: grid; grid-template-columns: var(--date-w) minmax(0, 1fr);
+    column-gap: calc(var(--gap) * 2); padding-bottom: 38px;
+  }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item::before {
+    content: ''; position: absolute; z-index: 1; top: 9px; left: calc(var(--date-w) + var(--gap) - 6px);
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--mist); border: 2px solid var(--gold);
+    transition: background-color .8s var(--ease) .2s;
+  }
+  .tl-item.is-visible::before, html:not(.js) .tl-item::before { background: var(--gold); }
+  .tl-date { text-align: right; font-size: .92rem; font-weight: 500; color: var(--gold-ink); padding-top: 3px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .tl-body h3 { font-size: 1.15rem; margin-bottom: 4px; }
+  .tl-org { font-weight: 500; font-size: .95rem; color: var(--text); line-height: 1.55; }
+  .tl-desc { margin-top: 6px; font-size: .94rem; color: var(--muted); line-height: 1.7; max-width: 62ch; }
+
+  /* ---------- Akademik çalışmalar ---------- */
+  .pub-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 30px); }
+  .pub {
+    padding: clamp(26px, 3.4vw, 36px); border-radius: 22px;
+    background: var(--mist); border-left: 3px solid var(--gold);
+    transition: transform .6s var(--ease), box-shadow .6s var(--ease), background-color .6s var(--ease);
+  }
+  .pub:hover { transform: translateX(6px); background: var(--white); box-shadow: 0 26px 50px -32px rgba(19, 41, 63, .45); }
+  .pub-head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .pub-head .ic {
+    flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+    background: var(--white); color: var(--gold-ink); box-shadow: 0 0 0 1px var(--line);
+  }
+  .pub-head .ic .icon { width: 21px; height: 21px; }
+  .pub-head h3 { font-size: 1.2rem; }
+  .pub-title { font-family: var(--serif); font-size: 1.06rem; line-height: 1.5; color: var(--navy); }
+  .pub-meta { margin-top: 10px; font-size: .9rem; color: var(--muted); line-height: 1.65; }
+  .pub-link {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 14px;
+    font-size: .92rem; font-weight: 500; color: var(--navy);
+    text-decoration: underline; text-decoration-color: rgba(201, 162, 94, .7);
+    text-underline-offset: 5px; text-decoration-thickness: 1.5px;
+    transition: text-decoration-color .4s var(--ease);
+  }
+  .pub-link:hover { text-decoration-color: var(--navy); }
+  .pub-link .icon { width: 15px; height: 15px; }
+  .pub-list { list-style: none; display: grid; gap: 12px; }
+  .pub-list li { position: relative; padding-left: 18px; font-size: .94rem; line-height: 1.6; }
+  .pub-list li::before { content: ''; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+  .pub-list .yr { color: var(--gold-ink); font-weight: 500; }
+  .pub-list em { display: block; color: var(--muted); font-size: .9rem; }
+  .pub p + p { margin-top: 12px; }
+  .pub > p { font-size: .94rem; line-height: 1.7; }
+
+  /* ---------- İletişim ---------- */
+  .contact {
+    position: relative; isolation: isolate; overflow: hidden; color: #fff;
+    padding-top: calc(clamp(84px, 11vw, 136px) + clamp(40px, 6vw, 70px));
+    background:
+      radial-gradient(50% 60% at 50% 55%, rgba(225, 192, 130, .1), transparent 70%),
+      radial-gradient(50% 50% at 92% 90%, rgba(122, 162, 204, .16), transparent 70%),
+      linear-gradient(170deg, #1F4467 0%, #183554 45%, #112640 100%);
+  }
+  .contact-wave {
+    position: absolute; top: -1px; left: 0; width: 100%; height: clamp(46px, 6vw, 84px);
+    transform: scaleY(-1); fill: var(--white); pointer-events: none;
+  }
+  .contact .section-head h2 { color: #fff; }
+  .contact .lead { color: rgba(255, 255, 255, .82); }
+  .contact-card {
+    max-width: 960px; margin: 0 auto;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.35fr); gap: 18px;
+    padding: clamp(26px, 4.5vw, 46px); border-radius: 28px;
+    background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .16);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+    box-shadow: 0 40px 80px -40px rgba(5, 15, 28, .6);
+  }
+  .info {
+    display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center;
+    padding: 12px 8px; border-radius: 18px; text-decoration: none; color: #fff;
+  }
+  .info-icon {
+    flex: none; display: grid; place-items: center; width: 58px; height: 58px; margin-bottom: 6px;
+    border-radius: 50%; background: var(--gold); color: var(--sea-900);
+    transition: transform .6s var(--ease);
+  }
+  a.info:hover .info-icon { transform: scale(1.08); }
+  .info-text { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .info-label { font-family: var(--serif); font-size: 1.15rem; }
+  .info-value { color: rgba(255, 255, 255, .82); font-size: .98rem; overflow-wrap: anywhere; }
+  .info-sub { color: var(--gold-soft); font-size: .86rem; }
+  .social { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px; }
+  .social-link {
+    display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .32); color: #fff; text-decoration: none; font-weight: 500; font-size: .95rem;
+    transition: background-color .5s var(--ease), border-color .5s var(--ease), transform .5s var(--ease);
+  }
+  .social-link .icon { width: 16px; height: 16px; color: var(--gold-soft); }
+  .social-link:hover { background: rgba(255, 255, 255, .08); border-color: var(--gold); transform: translateY(-2px); }
+  a.info:hover .info-value { text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(229, 205, 156, .8); }
+  .note {
+    margin: 30px auto 0; max-width: 60ch; text-align: center;
+    font-size: .9rem; color: rgba(255, 255, 255, .72);
+  }
+  .note .icon { display: inline-block; vertical-align: -4px; margin-right: 8px; width: 18px; height: 18px; color: var(--gold-soft); }
+
+  footer { background: var(--sea-900); color: rgba(255, 255, 255, .62); padding: 26px 0; font-size: .88rem; }
+  .footer-inner {
+    max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px);
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 28px;
+  }
+  .footer-social { display: flex; gap: 22px; }
+  .footer-social a { color: rgba(255, 255, 255, .78); text-decoration: none; transition: color .4s var(--ease); }
+  .footer-social a:hover { color: var(--gold-soft); text-decoration: underline; text-underline-offset: 4px; }
+
+  /* ---------- Kaydırınca beliren içerik ---------- */
+  .js [data-reveal]:not(.is-visible) { opacity: 0; }
+  .js [data-reveal].is-visible { animation: reveal-up 1.1s var(--ease) var(--d, 0s) backwards; }
+  .js [data-reveal="left"].is-visible { animation-name: reveal-left; }
+  .js [data-reveal="right"].is-visible { animation-name: reveal-right; }
+  .js [data-reveal="zoom"].is-visible { animation-name: reveal-zoom; }
+  @keyframes reveal-up { from { opacity: 0; transform: translateY(22px); } }
+  @keyframes reveal-left { from { opacity: 0; transform: translateX(-26px); } }
+  @keyframes reveal-right { from { opacity: 0; transform: translateX(26px); } }
+  @keyframes reveal-zoom { from { opacity: 0; transform: scale(.97); } }
+
+  /* Dil değişirken metin yumuşakça solup geri gelir */
+  main, footer, .nav-links, .mobile-menu a, .skip-link { transition: opacity .25s ease; }
+  html.lang-fade main, html.lang-fade footer, html.lang-fade .nav-links, html.lang-fade .mobile-menu a { opacity: 0; }
+
+  /* ---------- Duyarlı yerleşim ---------- */
+  @media (max-width: 980px) {
+    .nav-links { display: none; }
+    .menu-toggle { display: inline-block; }
+    .logo { font-size: 1.25rem; }
+    .nav-inner { gap: 14px; }
+  }
+  @media (min-width: 981px) {
+    .mobile-menu { display: none; }
+  }
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: minmax(0, 1fr); }
+    .portrait { width: min(100%, 360px); }
+    .pub-grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 760px) {
+    .contact-card { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 10px 18px; }
+    .info-value { font-size: .92rem; }
+    .info { flex-direction: row; align-items: center; gap: 16px; text-align: left; padding: 18px 0; border-radius: 0; }
+    .info + .info { border-top: 1px solid rgba(255, 255, 255, .12); }
+    .info-icon { width: 48px; height: 48px; margin-bottom: 0; }
+    .info-icon .icon { width: 21px; height: 21px; }
+    .info-text { align-items: flex-start; gap: 2px; min-width: 0; }
+  }
+  @media (max-width: 720px) {
+    .timeline { --date-w: 0px; --gap: 0px; }
+    .timeline::before, .timeline::after { left: 5px; }
+    .tl-item { grid-template-columns: minmax(0, 1fr); padding-left: 34px; }
+    .tl-item::before { left: 0; top: 7px; }
+    .tl-date { text-align: left; padding: 0 0 4px; }
+  }
+  @media (max-width: 620px) {
+    .cards { grid-template-columns: minmax(0, 1fr); }
+    .footer-inner { justify-content: center; text-align: center; }
+    .portrait-badge { left: 12px; bottom: 22px; }
+    .portrait-frame { transform: translate(12px, 12px); }
+    .hero-actions .btn { width: 100%; max-width: 320px; }
+  }
+  @media (max-width: 420px) {
+    .nav-inner { padding: 0 14px; gap: 10px; }
+    .nav-actions { gap: 8px; }
+    .logo { font-size: 1.1rem; }
+    .lang-switch { width: 72px; height: 34px; }
+    .menu-toggle { width: 40px; height: 40px; }
+    .menu-toggle span:nth-child(1) { top: 13px; }
+    .menu-toggle span:nth-child(2) { top: 19px; }
+    .menu-toggle span:nth-child(3) { top: 25px; }
+  }
+  @media (max-width: 340px) {
+    .logo { font-size: 1rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: .001ms !important; animation-iteration-count: 1 !important; animation-delay: 0s !important;
+      transition-duration: .001ms !important; transition-delay: 0s !important;
+    }
+    .hero [data-hero], .js [data-reveal] { opacity: 1 !important; animation: none !important; }
+  }
+</style>
+</head>
+
+<body>
+<!--
+  Dil yapısı: Türkçe metin her elementin içinde, İngilizcesi aynı elementin data-en özniteliğinde.
+  Bir metni değiştirirken iki dili de aynı yerde güncelleyin.
+-->
+<a class="skip-link" href="#main" data-en="Skip to content">İçeriğe geç</a>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="logo">Ceylan Hasanoğlu</a>
+
+    <nav class="nav-links" aria-label="Ana menü" data-en-aria-label="Main menu">
+      <a href="#hakkimda" data-en="About">Hakkımda</a>
+      <a href="#calisma-alanlari" data-en="Areas of Practice">Çalışma Alanları</a>
+      <a href="#deneyim" data-en="Experience">Deneyim</a>
+      <a href="#akademik" data-en="Research">Akademik</a>
+      <a href="#iletisim" data-en="Contact">İletişim</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="lang-switch" id="langSwitch" type="button" role="switch" aria-checked="false"
+              aria-label="English" title="Türkçe / English">
+        <span class="lang-switch__thumb" aria-hidden="true"></span>
+        <span class="lang-switch__opt" data-opt="tr" aria-hidden="true">TR</span>
+        <span class="lang-switch__opt" data-opt="en" aria-hidden="true">EN</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu"
+              aria-label="Menü" data-en-aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobil menü" data-en-aria-label="Mobile menu">
+    <a href="#hakkimda" data-en="About">Hakkımda</a>
+    <a href="#calisma-alanlari" data-en="Areas of Practice">Çalışma Alanları</a>
+    <a href="#deneyim" data-en="Experience">Deneyim</a>
+    <a href="#akademik" data-en="Research">Akademik</a>
+    <a href="#iletisim" data-en="Contact">İletişim</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== Giriş ===== -->
+  <section class="hero" id="top">
+    <div class="beacon" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-kicker" data-hero style="--d:.2s" data-en="Clinical Psychologist Ceylan Hasanoğlu">Klinik Psikolog Ceylan Hasanoğlu</p>
+      <h1 data-hero style="--d:.4s" data-en="A space to rethink yourself and your relationships.">Kendinizi ve ilişkilerinizi yeniden düşünmek için bir alan.</h1>
+      <p class="hero-sub" data-hero style="--d:.65s" data-en="Psychodynamically oriented, trauma-informed psychotherapy and psychodrama-based group work for children, adolescents and adults.">Çocuk, ergen ve yetişkinler için psikodinamik yönelimli, travmaya duyarlı psikoterapi ve psikodrama temelli grup çalışmaları.</p>
+      <div class="hero-actions" data-hero style="--d:.9s">
+        <a href="#iletisim" class="btn btn-gold" data-en="Get in touch">İletişime geçin</a>
+        <a href="#calisma-alanlari" class="btn btn-ghost" data-en="Areas of practice">Çalışma alanları</a>
+      </div>
+    </div>
+    <div class="waves" aria-hidden="true">
+      <svg class="wave wave--1" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0,52 Q180,18 360,52 T720,52 T1080,52 T1440,52 T1800,52 T2160,52 T2520,52 T2880,52 L2880,120 L0,120 Z"/></svg>
+      <svg class="wave wave--2" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0,68 Q360,98 720,68 T1440,68 T2160,68 T2880,68 L2880,120 L0,120 Z"/></svg>
+      <svg class="wave wave--3" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0,88 Q360,66 720,88 T1440,88 T2160,88 T2880,88 L2880,120 L0,120 Z"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== Hakkımda ===== -->
+  <section class="section about" id="hakkimda">
+    <div class="container about-grid">
+      <figure class="portrait" data-reveal="left">
+        <div class="portrait-frame" aria-hidden="true"></div>
+        <img src="data:image/webp;base64,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" width="483" height="647"
+             alt="Klinik Psikolog Ceylan Hasanoğlu" data-en-alt="Clinical Psychologist Ceylan Hasanoğlu">
+        <figcaption class="portrait-badge">
+          <strong>7+</strong>
+          <span data-en="years of clinical and field experience">yıllık klinik ve saha deneyimi</span>
+        </figcaption>
+      </figure>
+
+      <div class="about-text" data-reveal="right" style="--d:.12s">
+        <h2>Ceylan Hasanoğlu</h2>
+        <p class="role" data-en="Clinical Psychologist">Klinik Psikolog</p>
+        <p data-en="I graduated from the Psychology department at Ege University and completed my master’s degree in Clinical Psychology. Alongside my clinical work, I have worked in humanitarian aid and psychosocial support, particularly on experiences of trauma, migration, loss and crisis.">Ege Üniversitesi Psikoloji bölümünden mezun oldum ve Klinik Psikoloji yüksek lisansımı tamamladım. Klinik çalışmalarımın yanı sıra insani yardım ve psikososyal destek alanlarında, özellikle travma, göç, kayıp ve kriz deneyimleriyle ilgili çalışmalarda yer aldım.</p>
+        <p data-en="In my current practice in Ankara, I provide individual and group therapy for children, young people and adults, drawing on psychodynamic psychotherapy, child-centred play therapy and psychodrama. I value thinking together about a person’s inner world, their recurring patterns and the meanings they give to their experiences. I offer sessions in Turkish, Kurdish and English.">Ankara’daki güncel pratiğimde çocuk, genç ve erişkinlerle psikodinamik psikoterapi, çocuk merkezli oyun terapisi ve psikodrama ekolleriyle bireysel ve grup terapisi yürütüyorum. Kişinin iç dünyasını, tekrar eden örüntülerini ve deneyimine verdiği anlamları birlikte düşünmeye önem veriyorum. Görüşmelerimi Türkçe, Kürtçe ve İngilizce dillerinde yürütüyorum.</p>
+        <p data-en="I am continuing my advanced training in psychodrama and group psychotherapy at the Istanbul Psychodrama Institute. I keep supporting my clinical work with professional training, supervision and theoretical reading.">İstanbul Psikodrama Enstitüsü’nde ileri aşama psikodrama ve grup psikoterapisi eğitimime devam ediyorum. Klinik çalışmalarımı mesleki eğitim, süpervizyon ve kuramsal okumalarla desteklemeyi sürdürüyorum.</p>
+
+        <ul class="creds">
+          <li>
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+            <div>
+              <strong data-en="M.A. in Clinical Psychology (with thesis)">Klinik Psikoloji Yüksek Lisansı (Tezli)</strong>
+              <small data-en="Hasan Kalyoncu University, 2025">Hasan Kalyoncu Üniversitesi, 2025</small>
+            </div>
+          </li>
+          <li>
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+            <div>
+              <strong data-en="B.A. in Psychology, High Honours">Psikoloji Lisansı, Yüksek Onur</strong>
+              <small data-en="Ege University, 2019">Ege Üniversitesi, 2019</small>
+            </div>
+          </li>
+          <li>
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <div>
+              <strong data-en="Psychodrama and Group Psychotherapy Training">Psikodrama ve Grup Psikoterapisi Eğitimi</strong>
+              <small data-en="Istanbul Psychodrama Institute, advanced stage, ongoing">İstanbul Psikodrama Enstitüsü, ileri aşama, devam ediyor</small>
+            </div>
+          </li>
+          <li>
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></span>
+            <div>
+              <strong data-en="Session languages">Görüşme dilleri</strong>
+              <small data-en="Turkish, Kurdish and English">Türkçe, Kürtçe ve İngilizce</small>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Çalışma alanları ===== -->
+  <section class="section services" id="calisma-alanlari">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <h2 data-en="Areas of Practice">Çalışma Alanları</h2>
+        <p class="lead" data-en="Every process is shaped together, around each person’s age, needs and pace.">Her süreç, kişinin yaşına, ihtiyacına ve hızına göre birlikte şekillenir.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card" data-reveal style="--d:.05s">
+          <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.55L3 20.5l1.45-5.1A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M12 15s-3.4-2-3.4-4.3a1.9 1.9 0 0 1 3.4-1.15 1.9 1.9 0 0 1 3.4 1.15C15.4 13 12 15 12 15Z"/></svg></span>
+          <h3 data-en="Individual Psychotherapy">Bireysel Psikoterapi</h3>
+          <p data-en="One-to-one sessions with adolescents and adults. The psychodynamic approach explores how present difficulties connect to past experiences.">Ergen ve yetişkinlerle birebir görüşmeler. Psikodinamik yaklaşım, bugünkü zorlukların geçmiş deneyimlerle bağını anlamaya odaklanır.</p>
+        </article>
+
+        <article class="card" data-reveal style="--d:.15s">
+          <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.44 7.85c-.05.32.06.65.29.88l1.57 1.57c.47.47.7 1.09.7 1.7s-.23 1.24-.7 1.71l-1.61 1.61a.98.98 0 0 1-.84.28c-.47-.07-.8-.48-.97-.93a2.5 2.5 0 1 0-3.21 3.21c.44.17.85.5.92.97a.98.98 0 0 1-.27.84l-1.61 1.61a2.4 2.4 0 0 1-1.71.7 2.4 2.4 0 0 1-1.7-.7l-1.57-1.57a1.03 1.03 0 0 0-.88-.29c-.49.07-.84.5-1.02.97a2.5 2.5 0 1 1-3.24-3.24c.46-.18.9-.53.97-1.02a1.03 1.03 0 0 0-.29-.88L2.7 13.71A2.4 2.4 0 0 1 2 12c0-.62.24-1.23.7-1.7l1.53-1.53c.24-.24.58-.35.92-.3.51.08.88.53 1.07 1.01a2.5 2.5 0 1 0 3.26-3.26c-.48-.19-.93-.56-1.01-1.07a1.05 1.05 0 0 1 .3-.92L10.3 2.7A2.4 2.4 0 0 1 12 2c.62 0 1.23.24 1.7.7l1.57 1.57c.23.23.56.34.88.29.49-.07.84-.5 1.02-.97a2.5 2.5 0 1 1 3.24 3.24c-.46.18-.9.53-.97 1.02Z"/></svg></span>
+          <h3 data-en="Child-Centred Play Therapy">Çocuk Merkezli Oyun Terapisi</h3>
+          <p data-en="Children express their feelings most naturally through play. The playroom gives them a safe space to do so. Guidance for parents is also offered.">Çocuklar duygularını en rahat oyunla anlatır. Oyun odası, onlara kendilerini güvenle ifade edecekleri bir alan sunar. Ebeveynlere danışmanlık da verilir.</p>
+        </article>
+
+        <article class="card" data-reveal style="--d:.25s">
+          <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3 data-en="Psychodrama &amp; Group Work">Psikodrama ve Grup Çalışmaları</h3>
+          <p data-en="Psychodrama is a group method that explores experiences through action rather than talk. Groups focus on social skills, relationships and emotion regulation.">Psikodrama, yaşantıların konuşarak değil canlandırarak keşfedildiği bir grup yöntemidir. Gruplarda sosyal beceri, ilişkiler ve duygu düzenleme üzerine çalışılır.</p>
+        </article>
+
+        <article class="card" data-reveal style="--d:.35s">
+          <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span>
+          <h3 data-en="Psychological Assessment">Psikolojik Değerlendirme</h3>
+          <p data-en="I carry out assessments that aim to understand children’s cognitive functioning and psychological experiences. Findings from the WISC-IV and from projective assessment tools, used where clinically appropriate, are considered together with interviews and other clinical information. The assessment aims to understand the child’s needs better and to identify suitable forms of support.">Çocukların bilişsel işleyişini ve psikolojik yaşantılarını anlamaya yönelik değerlendirme süreçleri yürütüyorum. WISC-IV ve klinik amaca uygun olarak kullanılan projektif değerlendirme araçlarından elde edilen bulgular, görüşme ve diğer klinik bilgilerle birlikte ele alınır. Değerlendirme süreci, çocuğun ihtiyaçlarını daha iyi anlamayı ve uygun destek yollarını belirlemeyi amaçlar.</p>
+        </article>
+      </div>
+
+      <div class="topics" data-reveal>
+        <h3 data-en="Topics we can work on together">Birlikte çalışabileceğimiz konular</h3>
+        <ul class="chips">
+          <li data-en="Anxiety">Kaygı</li>
+          <li data-en="Depressive symptoms">Depresif belirtiler</li>
+          <li data-en="Traumatic experiences">Travmatik yaşantılar</li>
+          <li data-en="Relationship difficulties">İlişki sorunları</li>
+          <li data-en="Social anxiety">Sosyal kaygı</li>
+          <li data-en="Emotion regulation">Duygu düzenleme</li>
+          <li data-en="Adjustment difficulties">Uyum güçlükleri</li>
+          <li data-en="Attention difficulties">Dikkat güçlükleri</li>
+          <li data-en="Migration and displacement">Göç ve yerinden edilme</li>
+          <li data-en="Parenting">Ebeveynlik</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Deneyim ===== -->
+  <section class="section experience" id="deneyim">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <h2 data-en="Professional Experience">Mesleki Deneyim</h2>
+      </header>
+
+      <div class="intro" data-reveal>
+        <p data-en="My professional experience of about eight years spans clinical psychology and psychotherapy as well as national and international humanitarian projects. In these projects I worked as a psychologist in multicultural settings, in the fields of migration, trauma, grief and loss.">Yaklaşık sekiz yıllık mesleki deneyimim, klinik psikoloji ve psikoterapinin yanı sıra ulusal ve uluslararası insani yardım projelerine uzanıyor. Bu projelerde psikolog olarak, çok kültürlü ortamlarda göç, travma, yas ve kayıp alanlarında çalıştım.</p>
+        <p data-en="In my clinical practice, I provide individual psychotherapy with a psychodynamic orientation. Psychodrama group psychotherapy and expressive arts techniques are also part of my work.">Klinik pratiğimde psikodinamik yönelim doğrultusunda bireysel psikoterapi yürütüyorum. Psikodrama grup psikoterapisi ve dışavurumcu sanat teknikleri de çalışmalarımda yer alıyor.</p>
+        <p class="intro-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span data-en="I offer face-to-face sessions in Ankara as well as online sessions.">Ankara’da yüz yüze ve çevrim içi görüşmeler yapıyorum.</span></p>
+      </div>
+
+      <ol class="timeline" id="timeline">
+        <li class="tl-item" data-reveal>
+          <p class="tl-date">2026</p>
+          <div class="tl-body">
+            <h3 data-en="Clinical Coordinator &amp; Clinical Psychologist">Klinik Koordinatör ve Klinik Psikolog</h3>
+            <p class="tl-org" data-en="Uzm. Dr. Merve Cura Child &amp; Adolescent Mental Health Practice, Ankara">Uzm. Dr. Merve Cura Çocuk ve Ergen Ruh Sağlığı Muayenehanesi, Ankara</p>
+            <p class="tl-desc" data-en="Individual psychotherapy, play therapy, psychodrama groups and psychological assessment.">Bireysel psikoterapi, oyun terapisi, psikodrama grupları ve psikolojik değerlendirme.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <p class="tl-date">2022 – 2025</p>
+          <div class="tl-body">
+            <h3 data-en="Psychotherapist (under supervision)">Psikoterapist (süpervizyon altında)</h3>
+            <p class="tl-org" data-en="Independent practice">Serbest çalışma</p>
+            <p class="tl-desc" data-en="Psychodynamic individual psychotherapy with adolescents, young adults and adults.">Ergen, genç yetişkin ve yetişkinlerle psikodinamik bireysel psikoterapi.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <p class="tl-date">2024 – 2025</p>
+          <div class="tl-body">
+            <h3 data-en="Psychosocial Support Facilitator">Psikososyal Destek Fasilitatörü</h3>
+            <p class="tl-org" data-en="World Vision International, LIFT Project, Gaziantep">World Vision International, LIFT Projesi, Gaziantep</p>
+            <p class="tl-desc" data-en="Psychosocial support, group sessions and parent groups for adolescents and their families.">Ergenler ve aileleri için psikososyal destek, grup oturumları ve ebeveyn grupları.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <p class="tl-date">2021 – 2023</p>
+          <div class="tl-body">
+            <h3 data-en="Psychologist">Psikolog</h3>
+            <p class="tl-org" data-en="Support to Life, Adana">Hayata Destek Derneği, Adana</p>
+            <p class="tl-desc" data-en="Brief counselling for people affected by trauma and migration. Psychological First Aid at a field hospital after the Kahramanmaraş earthquake.">Travma ve göçten etkilenen kişilere kısa süreli danışmanlık. Kahramanmaraş depremi sonrası sahra hastanesinde psikolojik ilk yardım.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <p class="tl-date">2021</p>
+          <div class="tl-body">
+            <h3 data-en="Psychologist">Psikolog</h3>
+            <p class="tl-org" data-en="Development Foundation of Turkey, UNICEF-supported project, Mardin">Türkiye Kalkınma Vakfı, UNICEF destekli proje, Mardin</p>
+            <p class="tl-desc" data-en="Psychosocial assessment and brief counselling with children, young people and families.">Çocuk, genç ve ailelerle psikososyal değerlendirme ve kısa süreli danışmanlık.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <p class="tl-date">2020 – 2021</p>
+          <div class="tl-body">
+            <h3 data-en="Psychologist">Psikolog</h3>
+            <p class="tl-org" data-en="Rönesans Holding &amp; Turkish Psychological Association, İzmir">Rönesans Holding ve Türk Psikologlar Derneği, İzmir</p>
+            <p class="tl-desc" data-en="Crisis support for children and families after the İzmir earthquake.">İzmir depremi sonrası çocuk ve ailelere kriz desteği.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <p class="tl-date">2019 – 2020</p>
+          <div class="tl-body">
+            <h3 data-en="Psychologist">Psikolog</h3>
+            <p class="tl-org" data-en="Doctors Worldwide, WHO-supported Migrant Health Project, İzmir">Yeryüzü Doktorları, DSÖ destekli Göçmen Sağlığı Projesi, İzmir</p>
+            <p class="tl-desc" data-en="Psychological support, assessment and referral for migrant clients.">Göçmen danışanlara psikolojik destek, değerlendirme ve yönlendirme.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Akademik çalışmalar ve eğitimler ===== -->
+  <section class="section research" id="akademik">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <h2 data-en="Research &amp; Training">Akademik Çalışmalar ve Eğitimler</h2>
+        <p class="lead" data-en="My research focuses on parentification, shame, guilt and self-compassion. Parentification is when a child takes on adult responsibilities within the family.">Araştırmalarım ebeveynleşme, utanç, suçluluk ve öz-şefkat üzerinedir. Ebeveynleşme, çocuğun aile içinde yetişkinlere ait sorumlulukları üstlenmesidir.</p>
+      </header>
+
+      <div class="pub-grid">
+        <article class="pub" data-reveal style="--d:.05s">
+          <div class="pub-head">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+            <h3 data-en="Peer-reviewed article, 2024">Hakemli makale, 2024</h3>
+          </div>
+          <p class="pub-title" data-en="Investigation of certain cognitive and metacognitive factors affecting anxiety and depression symptoms through parallel serial mediation models">Anksiyete ve depresyon belirtilerini etkileyen bazı bilişsel ve üstbilişsel faktörlerin paralel seri aracılık modelleri ile incelenmesi</p>
+          <p class="pub-meta" data-en="Erdoğan Yıldırım, Z., Aktaş, E., Hasanoğlu, C. &amp; Tekinsav Sütcü, S. <em>Current Approaches in Psychiatry</em>, 16 (Suppl. 1), 281–292.">Erdoğan Yıldırım, Z., Aktaş, E., Hasanoğlu, C. ve Tekinsav Sütcü, S. <em>Psikiyatride Güncel Yaklaşımlar</em>, 16 (Ek 1), 281–292.</p>
+          <a class="pub-link" href="https://doi.org/10.18863/pgy.1540884" target="_blank" rel="noopener">
+            <span data-en="View the article">Makaleyi görüntüleyin</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          </a>
+        </article>
+
+        <article class="pub" data-reveal style="--d:.15s">
+          <div class="pub-head">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg></span>
+            <h3 data-en="Conference presentations">Kongre bildirileri</h3>
+          </div>
+          <ul class="pub-list">
+            <li>
+              <span data-en="8th International Positive Psychology Congress">8. Uluslararası Pozitif Psikoloji Kongresi</span>, <span class="yr">2026</span>
+              <em data-en="The moderating role of self-compassion and the mediating role of shame and guilt in the relationship between parentification and depression">Ebeveynleşme ve depresyon arasındaki ilişkide öz-şefkatin düzenleyici, utanç ve suçluluğun aracı rolü</em>
+            </li>
+            <li>
+              <span data-en="26th International Psychological Counseling and Guidance Congress">26. Uluslararası Psikolojik Danışma ve Rehberlik Kongresi</span>, <span class="yr">2025</span>
+              <em data-en="The role of shame and guilt in the relationship between parentification and resilience">Ebeveynleşme ile psikolojik dayanıklılık arasındaki ilişkide utanç ve suçluluğun rolü</em>
+            </li>
+          </ul>
+        </article>
+
+        <article class="pub" data-reveal style="--d:.05s">
+          <div class="pub-head">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></span>
+            <h3 data-en="Certificates">Sertifikalar</h3>
+          </div>
+          <ul class="pub-list">
+            <li><span data-en="Child-Centred Play Therapy Certificate">Çocuk Merkezli Oyun Terapisi Sertifikası</span>, <span class="yr">2026</span></li>
+            <li><span data-en="WISC-IV Practitioner Certificate">WISC-IV Uygulayıcı Sertifikası</span>, <span class="yr">2026</span></li>
+            <li><span data-en="Supportive Psychodynamic Psychotherapy I–II">Destekleyici Psikodinamik Psikoterapi I–II</span>, <span class="yr">2023 – 2026</span></li>
+            <li><span data-en="Diagnosis and Treatment of Personality Disorders, Otto Kernberg and colleagues">Kişilik Bozukluklarının Tanı ve Tedavisi, Otto Kernberg ve ekibi</span>, <span class="yr">2021 – 2022</span></li>
+            <li><span data-en="WHO Psychosocial Support Practitioner Programme">DSÖ Psikososyal Destek Uygulayıcı Programı</span>, <span class="yr">2019</span></li>
+          </ul>
+        </article>
+
+        <article class="pub" data-reveal style="--d:.15s">
+          <div class="pub-head">
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+            <h3 data-en="Memberships &amp; volunteering">Üyelikler ve gönüllülük</h3>
+          </div>
+          <p data-en="I am a member of the Turkish Psychological Association, the Trauma Studies Association, the Foton Association and the İmece Initiative Association.">Türk Psikologlar Derneği, Travma Çalışmaları Derneği, Foton Derneği ve İmece İnisiyatifi Derneği üyesiyim.</p>
+          <p data-en="I have volunteered in organising and support teams for trainings and symposia on trauma and migration.">Travma ve göç alanındaki eğitim ve sempozyumlarda organizasyon ve destek ekiplerinde gönüllü olarak yer aldım.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== İletişim ===== -->
+  <section class="section contact" id="iletisim">
+    <svg class="contact-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,80 Q180,50 360,80 T720,80 T1080,80 T1440,80 L1440,120 L0,120 Z"/></svg>
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <h2 data-en="Get in Touch">İletişime Geçin</h2>
+        <p class="lead" data-en="Together we can explore whether this process is right for you or your child. You can reach me by phone or email.">Sürecin sizin ya da çocuğunuz için uygun olup olmadığını birlikte değerlendirebiliriz. Bana telefon ya da e-posta ile ulaşabilirsiniz.</p>
+      </header>
+
+      <div class="contact-card" data-reveal="zoom" style="--d:.1s">
+        <div class="info">
+          <span class="info-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span class="info-text">
+            <span class="info-label" data-en="Location">Konum</span>
+            <span class="info-value" data-en="Ankara, Türkiye">Ankara, Türkiye</span>
+            <span class="info-sub" data-en="Face-to-face and online">Yüz yüze ve çevrim içi</span>
+          </span>
+        </div>
+        <a class="info" href="tel:+905416614966">
+          <span class="info-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          <span class="info-text">
+            <span class="info-label" data-en="Phone">Telefon</span>
+            <span class="info-value">+90 541 661 49 66</span>
+          </span>
+        </a>
+        <a class="info" href="mailto:ceylanhasanoglu7@gmail.com">
+          <span class="info-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+          <span class="info-text">
+            <span class="info-label" data-en="Email">E-posta</span>
+            <span class="info-value">ceylanhasanoglu7<wbr>@gmail.com</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="social" data-reveal style="--d:.15s">
+        <a class="social-link" href="https://www.linkedin.com/in/ceylanhasanoglu" target="_blank" rel="noopener" aria-label="LinkedIn (yeni sekmede açılır)" data-en-aria-label="LinkedIn (opens in a new tab)"><span>LinkedIn</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+        <!--INSTAGRAM-CONTACT-->
+      </div>
+
+      <p class="note" data-reveal style="--d:.2s">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        <span data-en="In an emergency, please call 112, Türkiye’s emergency number.">Acil bir durumda lütfen 112 Acil Çağrı Merkezi’ni arayın.</span>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© <span id="year">2026</span> Ceylan Hasanoğlu. <span data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
+    <nav class="footer-social" aria-label="Sosyal medya" data-en-aria-label="Social media">
+      <a href="https://www.linkedin.com/in/ceylanhasanoglu" target="_blank" rel="noopener">LinkedIn</a>
+      <!--INSTAGRAM-FOOTER-->
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var html = document.documentElement;
+  var navbar = document.getElementById('navbar');
+  var bar = document.getElementById('progressBar');
+  var timeline = document.getElementById('timeline');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  window.__siteReady = true;
+
+  /* ---- Kaydırma: üst menü görünümü, ilerleme çizgisi, zaman çizgisi ---- */
+  var ticking = false;
+  function onScroll() {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }
+  function update() {
+    ticking = false;
+    var y = window.scrollY || window.pageYOffset;
+    navbar.classList.toggle('scrolled', y > 40);
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
+    if (timeline) {
+      var r = timeline.getBoundingClientRect();
+      var p = (window.innerHeight * 0.62 - r.top) / r.height;
+      timeline.style.setProperty('--tl', Math.max(0, Math.min(1, p)).toFixed(4));
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+
+  /* ---- Kaydırınca beliren içerik ---- */
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window && !reduceMotion.matches) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* ---- Menüde bulunulan bölümü işaretle ---- */
+  var navAnchors = document.querySelectorAll('.nav-links a, .mobile-menu a');
+  function setActive(id) {
+    navAnchors.forEach(function (a) {
+      if (id && a.getAttribute('href') === '#' + id) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+  }
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(e.target.id === 'top' ? null : e.target.id);
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['top', 'hakkimda', 'calisma-alanlari', 'deneyim', 'akademik', 'iletisim'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) spy.observe(el);
+    });
+  }
+
+  /* ---- Mobil menü ---- */
+  var menuBtn = document.getElementById('menuToggle');
+  var menu = document.getElementById('mobileMenu');
+  function setMenu(open) {
+    menuBtn.setAttribute('aria-expanded', String(open));
+    navbar.classList.toggle('menu-open', open);
+  }
+  menuBtn.addEventListener('click', function () {
+    setMenu(menuBtn.getAttribute('aria-expanded') !== 'true');
+  });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && navbar.classList.contains('menu-open')) { setMenu(false); menuBtn.focus(); }
+  });
+  document.addEventListener('click', function (e) {
+    if (navbar.classList.contains('menu-open') && !navbar.contains(e.target)) setMenu(false);
+  });
+  window.addEventListener('resize', function () { if (window.innerWidth > 980) setMenu(false); });
+
+  /* ---- Dil: Türkçe metin elementte, İngilizcesi data-en özniteliğinde ---- */
+  var sw = document.getElementById('langSwitch');
+  var ATTRS = ['aria-label', 'alt', 'content'];
+  var current = 'tr';
+
+  function swapText(lang) {
+    document.querySelectorAll('[data-en]').forEach(function (el) {
+      if (el.__tr === undefined) el.__tr = el.innerHTML;
+      el.innerHTML = lang === 'en' ? el.getAttribute('data-en') : el.__tr;
+    });
+    ATTRS.forEach(function (attr) {
+      document.querySelectorAll('[data-en-' + attr + ']').forEach(function (el) {
+        var key = '__tr_' + attr;
+        if (el[key] === undefined) el[key] = el.getAttribute(attr) || '';
+        el.setAttribute(attr, lang === 'en' ? el.getAttribute('data-en-' + attr) : el[key]);
+      });
+    });
+    html.lang = lang;
+  }
+
+  function applyLang(lang, animate) {
+    if (lang === current) return;
+    current = lang;
+    sw.setAttribute('aria-checked', String(lang === 'en'));
+    try { localStorage.setItem('ch-lang', lang); } catch (e) {}
+    if (animate && !reduceMotion.matches) {
+      html.classList.add('lang-fade');
+      setTimeout(function () {
+        swapText(lang);
+        requestAnimationFrame(function () { html.classList.remove('lang-fade'); });
+      }, 250);
+    } else {
+      swapText(lang);
+    }
+  }
+
+  // Anahtar: tıklama, klavye (← →) ve parmakla kaydırma
+  var drag = null, suppressClick = false;
+  sw.addEventListener('click', function (e) {
+    if (suppressClick) { suppressClick = false; return; }
+    var opt = e.target.closest && e.target.closest('[data-opt]');
+    applyLang(opt ? opt.getAttribute('data-opt') : (current === 'tr' ? 'en' : 'tr'), true);
+  });
+  sw.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { e.preventDefault(); applyLang('en', true); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); applyLang('tr', true); }
+  });
+  sw.addEventListener('pointerdown', function (e) { drag = { x: e.clientX, moved: false }; });
+  window.addEventListener('pointermove', function (e) {
+    if (!drag) return;
+    var dx = e.clientX - drag.x;
+    if (Math.abs(dx) > 14) {
+      drag.moved = true;
+      drag.x = e.clientX;
+      applyLang(dx > 0 ? 'en' : 'tr', true);
+    }
+  });
+  window.addEventListener('pointerup', function () {
+    if (drag && drag.moved) {
+      suppressClick = true;
+      setTimeout(function () { suppressClick = false; }, 60);
+    }
+    drag = null;
+  });
+
+  // Başlangıç dili: adres çubuğundaki ?lang=en, sonra önceki seçim, yoksa Türkçe
+  var initial = 'tr';
+  try {
+    var param = new URLSearchParams(location.search).get('lang');
+    var saved = localStorage.getItem('ch-lang');
+    if (param === 'en' || param === 'tr') initial = param;
+    else if (saved === 'en' || saved === 'tr') initial = saved;
+  } catch (e) {}
+  applyLang(initial, false);
+  html.classList.remove('i18n-wait');
+
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = String(Math.max(2026, new Date().getFullYear()));
+})();
+</script>
+</body>
+</html>
