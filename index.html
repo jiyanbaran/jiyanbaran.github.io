@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#13293F">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ceylan Hasanoğlu | Klinik Psikolog">
-<meta property="og:description" content="Kendinizi ve ilişkilerinizi yeniden düşünmek için bir alan.">
+<meta property="og:description" content="Klinik Psikolog Ceylan Hasanoğlu. Ankara’da yüz yüze ve çevrim içi psikoterapi.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2313293F'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23C9A25E'%3ECH%3C/text%3E%3C/svg%3E">
 
 <!-- Yazı tipleri: Playfair Display (başlıklar) ve Poppins (metin) -->
@@ -150,7 +150,7 @@
     background: var(--gold); transform: scaleX(0); transform-origin: left;
     transition: transform .5s var(--ease);
   }
-  .nav-links a:hover::after, .nav-links a[aria-current="true"]::after { transform: scaleX(1); }
+  .nav-links a:hover::after, .nav-links a[aria-current="true"]::after, .nav-links a[aria-current="page"]::after { transform: scaleX(1); }
   .nav-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 
   .navbar.scrolled, .navbar.menu-open {
@@ -234,7 +234,7 @@
     color: var(--navy); font-weight: 500; font-size: 1.05rem; text-decoration: none;
   }
   .mobile-menu a:last-child { border-bottom: 0; }
-  .mobile-menu a[aria-current="true"] { color: var(--gold-ink); }
+  .mobile-menu a[aria-current="true"], .mobile-menu a[aria-current="page"] { color: var(--gold-ink); }
 
   /* ---------- Giriş (hero): sakin bir liman ---------- */
   .hero {
@@ -265,7 +265,7 @@
     color: var(--gold-soft); margin-bottom: 18px;
   }
   .hero h1 {
-    color: #fff; font-size: clamp(1.75rem, calc(8.4vw - 2px), 3.7rem); line-height: 1.15;
+    color: #fff; font-size: clamp(2.2rem, 9vw, 4.4rem); line-height: 1.12;
     text-shadow: 0 2px 24px rgba(5, 15, 28, .25);
   }
   .hero-sub {
@@ -371,7 +371,7 @@
   /* ---------- Deneyim: zaman çizgisi ---------- */
   .experience { background: var(--mist); }
   .timeline {
-    --date-w: 128px; --gap: 28px;
+    --date-w: 164px; --gap: 28px;
     position: relative; list-style: none; max-width: 860px; margin: 0 auto;
   }
   .timeline::before, .timeline::after {
@@ -430,6 +430,48 @@
   .pub-list em { display: block; color: var(--muted); font-size: .9rem; }
   .pub p + p { margin-top: 12px; }
   .pub > p { font-size: .94rem; line-height: 1.7; }
+  .pub--wide { grid-column: 1 / -1; }
+  .pub--wide > p { max-width: 72ch; }
+  /* ---------- Yazılarım sayfası: sakin, yumuşak ve ters renkler ---------- */
+  .subpage {
+    --sp-paper: #EEF2F5;      /* yumuşak beyaz: üst bölüm ve alt bilgi */
+    --sp-ink: #2D4258;        /* yumuşak lacivert: okuma alanı */
+    --sp-ink-text: #E6ECF1;   /* okuma alanındaki yazı */
+    --sp-ink-muted: #B7C4D0;
+    --sp-paper-text: #4A5D70;
+  }
+  body.subpage { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
+  body.subpage main { flex: 1; display: flex; flex-direction: column; }
+  .subpage .navbar.scrolled { background: rgba(238, 242, 245, .95); box-shadow: 0 1px 0 rgba(45, 66, 88, .1); }
+  .page-head {
+    background: var(--sp-paper); text-align: center;
+    padding: calc(66px + clamp(52px, 7vw, 88px)) 0 clamp(46px, 6vw, 68px);
+  }
+  .page-head h1 { color: var(--sp-ink); font-size: clamp(2.3rem, 6vw, 3.4rem); line-height: 1.12; }
+  .page-head h1::after {
+    content: ''; display: block; width: 56px; height: 2px; margin: 20px auto 0; background: var(--gold);
+  }
+  .writing {
+    flex: 1; background: var(--sp-ink); color: var(--sp-ink-text);
+    padding: clamp(48px, 7vw, 84px) 0 clamp(64px, 9vw, 104px);
+  }
+  .posts { max-width: 760px; margin: 0 auto; }
+  .back-home { text-align: center; }
+  .back-home a {
+    display: inline-flex; align-items: center; gap: 8px; color: var(--sp-ink-text); font-weight: 500;
+    text-decoration: underline; text-underline-offset: 5px; text-decoration-color: rgba(229, 205, 156, .7);
+    transition: text-decoration-color .4s var(--ease);
+  }
+  .back-home a:hover { text-decoration-color: var(--sp-ink-text); }
+  .back-home .icon { width: 17px; height: 17px; color: var(--gold-soft); }
+  .subpage footer { background: var(--sp-paper); color: var(--sp-paper-text); }
+  .subpage .footer-social a { color: var(--sp-ink); }
+  .subpage .footer-social a:hover { color: var(--gold-ink); }
+  .train-list { display: block; columns: 2; column-gap: clamp(28px, 4vw, 52px); }
+  .train-list li { break-inside: avoid; margin-bottom: 14px; }
+  .train-list .t-name { display: block; color: var(--text); font-weight: 500; }
+  .train-list .t-org { display: block; color: var(--muted); font-size: .88rem; line-height: 1.55; margin-top: 2px; }
+  @media (max-width: 760px) { .train-list { columns: 1; } }
 
   /* ---------- İletişim ---------- */
   .contact {
@@ -588,6 +630,7 @@
       <a href="#calisma-alanlari" data-en="Areas of Practice">Çalışma Alanları</a>
       <a href="#deneyim" data-en="Experience">Deneyim</a>
       <a href="#akademik" data-en="Research">Akademik</a>
+      <a href="yazilar.html" data-en="Articles">Yazılarım</a>
       <a href="#iletisim" data-en="Contact">İletişim</a>
     </nav>
 
@@ -610,6 +653,7 @@
     <a href="#calisma-alanlari" data-en="Areas of Practice">Çalışma Alanları</a>
     <a href="#deneyim" data-en="Experience">Deneyim</a>
     <a href="#akademik" data-en="Research">Akademik</a>
+    <a href="yazilar.html" data-en="Articles">Yazılarım</a>
     <a href="#iletisim" data-en="Contact">İletişim</a>
   </nav>
 </header>
@@ -620,8 +664,8 @@
   <section class="hero" id="top">
     <div class="beacon" aria-hidden="true"></div>
     <div class="hero-content">
-      <p class="hero-kicker" data-hero style="--d:.2s" data-en="Clinical Psychologist Ceylan Hasanoğlu">Klinik Psikolog Ceylan Hasanoğlu</p>
-      <h1 data-hero style="--d:.4s" data-en="A space to rethink yourself and your relationships.">Kendinizi ve ilişkilerinizi yeniden düşünmek için bir alan.</h1>
+      <p class="hero-kicker" data-hero style="--d:.2s" data-en="Clinical Psychologist">Klinik Psikolog</p>
+      <h1 data-hero style="--d:.4s">Ceylan Hasanoğlu</h1>
       <p class="hero-sub" data-hero style="--d:.65s" data-en="Psychodynamically oriented, trauma-informed psychotherapy and psychodrama-based group work for children, adolescents and adults.">Çocuk, ergen ve yetişkinler için psikodinamik yönelimli, travmaya duyarlı psikoterapi ve psikodrama temelli grup çalışmaları.</p>
       <div class="hero-actions" data-hero style="--d:.9s">
         <a href="#iletisim" class="btn btn-gold" data-en="Get in touch">İletişime geçin</a>
@@ -730,11 +774,10 @@
           <li data-en="Depressive symptoms">Depresif belirtiler</li>
           <li data-en="Traumatic experiences">Travmatik yaşantılar</li>
           <li data-en="Relationship difficulties">İlişki sorunları</li>
-          <li data-en="Social anxiety">Sosyal kaygı</li>
           <li data-en="Emotion regulation">Duygu düzenleme</li>
-          <li data-en="Adjustment difficulties">Uyum güçlükleri</li>
-          <li data-en="Attention difficulties">Dikkat güçlükleri</li>
-          <li data-en="Migration and displacement">Göç ve yerinden edilme</li>
+          <li data-en="Self-perception and self-esteem">Kendilik algısı ve özgüven</li>
+          <li data-en="Separation, loss and grief">Ayrılık, kayıp ve yas</li>
+          <li data-en="Migration and adjustment difficulties">Göç ve uyum güçlükleri</li>
           <li data-en="Parenting">Ebeveynlik</li>
         </ul>
       </div>
@@ -756,7 +799,15 @@
 
       <ol class="timeline" id="timeline">
         <li class="tl-item" data-reveal>
-          <p class="tl-date">2026</p>
+          <p class="tl-date" data-en="2022 – Present">2022 – Devam ediyor</p>
+          <div class="tl-body">
+            <h3 data-en="Psychotherapist">Psikoterapist</h3>
+            <p class="tl-org" data-en="Independent practice">Serbest çalışma</p>
+            <p class="tl-desc" data-en="Psychodynamic psychotherapy with adolescents, young adults and adults.">Ergen, genç yetişkin ve yetişkinlerle psikodinamik psikoterapi.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <p class="tl-date" data-en="Apr – Oct 2026">Nisan – Ekim 2026</p>
           <div class="tl-body">
             <h3 data-en="Clinical Coordinator &amp; Clinical Psychologist">Klinik Koordinatör ve Klinik Psikolog</h3>
             <p class="tl-org" data-en="Uzm. Dr. Merve Cura Child &amp; Adolescent Mental Health Practice, Ankara">Uzm. Dr. Merve Cura Çocuk ve Ergen Ruh Sağlığı Muayenehanesi, Ankara</p>
@@ -764,17 +815,9 @@
           </div>
         </li>
         <li class="tl-item" data-reveal>
-          <p class="tl-date">2022 – 2025</p>
-          <div class="tl-body">
-            <h3 data-en="Psychotherapist (under supervision)">Psikoterapist (süpervizyon altında)</h3>
-            <p class="tl-org" data-en="Independent practice">Serbest çalışma</p>
-            <p class="tl-desc" data-en="Psychodynamic individual psychotherapy with adolescents, young adults and adults.">Ergen, genç yetişkin ve yetişkinlerle psikodinamik bireysel psikoterapi.</p>
-          </div>
-        </li>
-        <li class="tl-item" data-reveal>
           <p class="tl-date">2024 – 2025</p>
           <div class="tl-body">
-            <h3 data-en="Psychosocial Support Facilitator">Psikososyal Destek Fasilitatörü</h3>
+            <h3 data-en="Child and Adolescent Group Facilitator">Çocuk ve Ergen Grubu Yürütücüsü</h3>
             <p class="tl-org" data-en="World Vision International, LIFT Project, Gaziantep">World Vision International, LIFT Projesi, Gaziantep</p>
             <p class="tl-desc" data-en="Psychosocial support, group sessions and parent groups for adolescents and their families.">Ergenler ve aileleri için psikososyal destek, grup oturumları ve ebeveyn grupları.</p>
           </div>
@@ -820,7 +863,6 @@
     <div class="container">
       <header class="section-head" data-reveal>
         <h2 data-en="Research &amp; Training">Akademik Çalışmalar ve Eğitimler</h2>
-        <p class="lead" data-en="My research focuses on parentification, shame, guilt and self-compassion. Parentification is when a child takes on adult responsibilities within the family.">Araştırmalarım ebeveynleşme, utanç, suçluluk ve öz-şefkat üzerinedir. Ebeveynleşme, çocuğun aile içinde yetişkinlere ait sorumlulukları üstlenmesidir.</p>
       </header>
 
       <div class="pub-grid">
@@ -854,26 +896,36 @@
           </ul>
         </article>
 
-        <article class="pub" data-reveal style="--d:.05s">
+        <article class="pub pub--wide" data-reveal style="--d:.05s">
           <div class="pub-head">
-            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></span>
-            <h3 data-en="Certificates">Sertifikalar</h3>
+            <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+            <h3 data-en="Training">Eğitimler</h3>
           </div>
-          <ul class="pub-list">
-            <li><span data-en="Child-Centred Play Therapy Certificate">Çocuk Merkezli Oyun Terapisi Sertifikası</span>, <span class="yr">2026</span></li>
-            <li><span data-en="WISC-IV Practitioner Certificate">WISC-IV Uygulayıcı Sertifikası</span>, <span class="yr">2026</span></li>
-            <li><span data-en="Supportive Psychodynamic Psychotherapy I–II">Destekleyici Psikodinamik Psikoterapi I–II</span>, <span class="yr">2023 – 2026</span></li>
-            <li><span data-en="Diagnosis and Treatment of Personality Disorders, Otto Kernberg and colleagues">Kişilik Bozukluklarının Tanı ve Tedavisi, Otto Kernberg ve ekibi</span>, <span class="yr">2021 – 2022</span></li>
-            <li><span data-en="WHO Psychosocial Support Practitioner Programme">DSÖ Psikososyal Destek Uygulayıcı Programı</span>, <span class="yr">2019</span></li>
+          <ul class="pub-list train-list">
+            <li><span class="t-name" data-en="Psychodrama Group Psychotherapy Training – Advanced Level, &lt;span class=&quot;yr&quot;&gt;ongoing&lt;/span&gt;">Psikodrama Grup Psikoterapisi Eğitimi – İleri Aşama, <span class="yr">devam ediyor</span></span><span class="t-org" data-en="Istanbul Psychodrama Institute / International Zerka Moreno Institute">İstanbul Psikodrama Enstitüsü / Uluslararası Zerka Moreno Enstitüsü</span></li>
+            <li><span class="t-name" data-en="Supportive Psychodynamic Psychotherapy Training I–II">Destekleyici Psikodinamik Psikoterapi Eğitimi I–II</span><span class="t-org" data-en="Prof. Dr. Cem Kaptanoğlu / İNDA Solution-Focused Training and Counselling Centre">Prof. Dr. Cem Kaptanoğlu / İNDA Çözüm Odaklı Eğitim ve Danışmanlık Merkezi</span></li>
+            <li><span class="t-name" data-en="Psychodynamic Psychopathology Training and Supervision">Psikodinamik Psikopatoloji Eğitimi ve Süpervizyon</span><span class="t-org">Dr. Suzan Uğur Girginer</span></li>
+            <li><span class="t-name" data-en="Introduction to Lacan’s Work: Seminars and Supervision">Lacan Yapıtına Giriş Seminerleri ve Süpervizyon</span><span class="t-org">Dr. Özge Soysal</span></li>
+            <li><span class="t-name" data-en="Psychoanalytic Supervision">Psikanalitik Süpervizyon</span><span class="t-org" data-en="Psychoanalyst Özge Güdül">Psikanalist Özge Güdül</span></li>
+            <li><span class="t-name" data-en="Psychodynamically Oriented Sex Therapy and Dynamic Psychotherapy: Basic Training">Psikodinamik Odaklı Cinsel Terapi ve Dinamik Psikoterapi Temel Eğitimi</span><span class="t-org">Prof. Dr. Doğan Şahin</span></li>
+            <li><span class="t-name" data-en="Diagnosis and Treatment of Personality Disorders – Master Class">Kişilik Bozukluklarının Tanı ve Tedavisi – Master Class</span><span class="t-org" data-en="Otto Kernberg and colleagues / Giunti Psychometrics Türkiye">Otto Kernberg ve çalışma arkadaşları / Giunti Psychometrics Türkiye</span></li>
+            <li><span class="t-name" data-en="Solution-Focused Brief Therapy Training">Çözüm Odaklı Kısa Süreli Terapi Eğitimi</span><span class="t-org">Dr. Nevin Dölek</span></li>
+            <li><span class="t-name" data-en="WISC-IV Practitioner Certificate">WISC-IV Uygulayıcı Sertifikası</span><span class="t-org">Giunti Psychometrics Türkiye</span></li>
+            <li><span class="t-name" data-en="Child-Centred Play Therapy Certificate Programme">Çocuk Merkezli Oyun Terapisi Sertifika Programı</span><span class="t-org" data-en="Çatı Psychological Counselling and Training Centre">Çatı Psikolojik Danışmanlık ve Eğitim Merkezi</span></li>
+            <li><span class="t-name" data-en="Child Assessment Tools Practitioner Training">Çocuk Testleri Uygulayıcı Eğitimi</span><span class="t-org" data-en="Albert Ellis Institute / Yıldız Technical University">Albert Ellis Enstitüsü / Yıldız Teknik Üniversitesi</span></li>
+            <li><span class="t-name" data-en="Psychosocial Support Practitioner Programme 1">Psikososyal Destek Uygulayıcı Programı 1</span><span class="t-org" data-en="World Health Organization (WHO), Department of Mental Health">Dünya Sağlık Örgütü (WHO) Ruh Sağlığı Departmanı</span></li>
+            <li><span class="t-name" data-en="Resilience-Based Individual and Group Counselling Modules Training">Dayanıklılık Temelli Bireysel ve Grup Psikolojik Danışmanlığı Modülleri Eğitimi</span><span class="t-org">UNICEF / Prof. Dr. Özgür Erdur Baker</span></li>
+            <li><span class="t-name" data-en="“How Together?” Network of Artists Working with Young People – Expressive Arts Practices">“Birlikte Nasıl?” Gençlerle Çalışan Sanatçılar Ağı – Dışavurumcu Sanat Uygulamaları</span><span class="t-org">Gençlerle Sanat İnisiyatifi / Allianz Foundation, Hatay</span></li>
+            <li><span class="t-name" data-en="Volunteering in Humanitarian Work Training">İnsani Yardım Çalışmalarında Gönüllülük Eğitimi</span><span class="t-org">LY16 / Lattanzio KIBS Benefit Corporation</span></li>
           </ul>
         </article>
 
-        <article class="pub" data-reveal style="--d:.15s">
+        <article class="pub pub--wide" data-reveal style="--d:.05s">
           <div class="pub-head">
             <span class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
             <h3 data-en="Memberships &amp; volunteering">Üyelikler ve gönüllülük</h3>
           </div>
-          <p data-en="I am a member of the Turkish Psychological Association, the Trauma Studies Association, the Foton Association and the İmece Initiative Association.">Türk Psikologlar Derneği, Travma Çalışmaları Derneği, Foton Derneği ve İmece İnisiyatifi Derneği üyesiyim.</p>
+          <p data-en="I am a member of the Turkish Psychological Association, the Trauma Studies Association and the Foton Association.">Türk Psikologlar Derneği, Travma Çalışmaları Derneği ve Foton Derneği üyesiyim.</p>
           <p data-en="I have volunteered in organising and support teams for trainings and symposia on trauma and migration.">Travma ve göç alanındaki eğitim ve sempozyumlarda organizasyon ve destek ekiplerinde gönüllü olarak yer aldım.</p>
         </article>
       </div>
@@ -905,11 +957,11 @@
             <span class="info-value">+90 541 661 49 66</span>
           </span>
         </a>
-        <a class="info" href="mailto:ceylanhasanoglu7@gmail.com">
+        <a class="info" href="mailto:ceylanhasanoglu@outlook.com">
           <span class="info-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
           <span class="info-text">
             <span class="info-label" data-en="Email">E-posta</span>
-            <span class="info-value">ceylanhasanoglu7<wbr>@gmail.com</span>
+            <span class="info-value">ceylanhasanoglu<wbr>@outlook.com</span>
           </span>
         </a>
       </div>
@@ -944,6 +996,7 @@
   var navbar = document.getElementById('navbar');
   var bar = document.getElementById('progressBar');
   var timeline = document.getElementById('timeline');
+  var solidNav = document.body.classList.contains('subpage');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   window.__siteReady = true;
 
@@ -955,7 +1008,7 @@
   function update() {
     ticking = false;
     var y = window.scrollY || window.pageYOffset;
-    navbar.classList.toggle('scrolled', y > 40);
+    navbar.classList.toggle('scrolled', solidNav || y > 40);
     var max = document.documentElement.scrollHeight - window.innerHeight;
     bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
     if (timeline) {
